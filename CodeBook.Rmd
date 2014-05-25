@@ -1,0 +1,12 @@
+CodeBook
+========================================================
+
+The variables in this script come from the dataset downloaded on the Getting and Cleaning Data website.  The initial x test and x train data were subset to only include data that contained "mean" and "std" in the variable (column) name.  These data represent measurements from GPS data taken on volunteers wearing a smartphone tracking device.
+
+From the subject files: subject data represent the ID of the volunteer.
+
+From the activity files: this data showed which activity paired with what integer identifier in the ytest/ytrain data.
+
+The ytrain/ytest data was modified to remove the integer and replace with the descriptive activity label.
+
+The subject, y, and x tables were combined to produced a single table.  This table was melted and then aggregated by the means of each variable in the table and saved as the tidy table.
